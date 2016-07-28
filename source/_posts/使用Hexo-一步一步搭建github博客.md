@@ -1,10 +1,10 @@
 ---
-title: 使用Hexo 搭建一步一步github博客
+title: 使用Hexo一步一步搭建github博客
 date: 2016-07-28 14:03:39
 categories: Nodejs
 tags: Hexo 
 ---
-Hexo是基于Nodejs的一个快速简洁高效的博客框架，这篇文章将要介绍如何如何利用Hexo博客框架、Github Pages免费静态站点托管服务来建立个人在github上的博客站点。本文版本是Hexo 3.2.2。       
+Hexo是基于Nodejs的一个快速简洁高效的博客框架，这篇文章将要介绍如何使用Hexo博客框架、Github Pages免费静态站点托管服务来建立个人在github上的博客站点。本文版本是Hexo 3.2.2。       
 ## 一、安装相关软件
 这一点[Hexo官方文档](https://hexo.io/zh-cn/docs/#安装)上面写得很清晰了，直接复制下来,稍微补充了一点内容：    
 ### 安装 Git
@@ -77,12 +77,12 @@ hexo的配置文件是站点根目录下的`_config.yml`，里面可以配置博
 `hexo new [layout] <title>`     
 layout是文章布局，title是文章标题。如果不指定layout，则使用默认layout。     
 例子：  
-`hexo new "使用Hexo 搭建一步一步github博客"`        
+`hexo new "使用Hexo一步一步搭建github博客"`        
 运行完成后，将会在博客根目录`HexoBlog`的`\source\_posts`目录底下生成`使用Hexo 搭建一步一步github博客.md`文件。        
 打开这个md文件，可以看到下面的内容      
 ```
 ---
-title: Hexo 搭建一步一步github博客
+title: Hexo一步一步搭建github博客
 date: 2016-07-27 22:38:45
 tags:
 ---
@@ -99,7 +99,7 @@ tags:
 - 通过相对路径标签引用资源，而不是markdown语法引用。      
   {\% asset_img 1.png [title] \%}     
 
-  上面的“\”要去掉，这里因为是hexo的指令，不能直接显示，所以加上。
+  上面的“\”要去掉，这里因为是hexo的指令，不能直接显示在文章里，所以这里才加上。
 
 
 ### 4.发布文章、运行
@@ -149,7 +149,7 @@ hexo deploy
 
 Hexo主题更换很容易，首先到https://hexo.io/themes/ 里面寻找你喜欢的主题，然后进入该主题的链接，里面一般有文章介绍从哪里获取主题文件，或者直接到github里面按照`hexo+主题关键字搜索`，找到主题关键字之后，`git clone`下载到本地。然后将`maupassant`文件夹复制一份到博客根目录的`themes`里面，最后修改`_config.yml`的`theme`值为`主题名`即可，这里是修改为`maupassant`。		
 
-不过`maupassant`主题有点特别，还需要依赖`hexo-renderer-jade`和`hexo-renderer-sass`，所以还要安装着两个插件		
+不过`maupassant`主题有点特别，还需要依赖`hexo-renderer-jade`和`hexo-renderer-sass`，所以还要安装两个插件		
 
 ```
 npm install hexo-renderer-jade --save
