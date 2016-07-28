@@ -4,15 +4,15 @@
 
 # Site
 title: Stormwy's blog
-subtitle:
+subtitle: 当你坚持不懈、挥汗如雨的时候，造物主未必都能够明鉴；但当你放浪形骸、自甘堕落的时候，全世界必会将你抛弃。
 description:
 author: stormwy
-language:
+language: zh-CN
 timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: http://stormwy.github.io
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -34,7 +34,7 @@ titlecase: false # Transform title into titlecase
 external_link: true # Open external links in new tab
 filename_case: 0
 render_drafts: false
-post_asset_folder: false
+post_asset_folder: true
 relative_link: false
 future: true
 highlight:
@@ -63,9 +63,13 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: maupassant
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type:
+  type: git
+  repo: git@github_private.com:stormwy/stormwy.github.io.git
+  branch: master
+  name: stormwy
+  email: stormwy@163.com 
