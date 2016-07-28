@@ -78,7 +78,7 @@ hexo的配置文件是站点根目录下的`_config.yml`，里面可以配置博
 layout是文章布局，title是文章标题。如果不指定layout，则使用默认layout。     
 例子：  
 `hexo new "使用Hexo一步一步搭建github博客"`        
-运行完成后，将会在博客根目录`HexoBlog`的`\source\_posts`目录底下生成`使用Hexo 搭建一步一步github博客.md`文件。        
+运行完成后，将会在博客根目录`HexoBlog`的`\source\_posts`目录底下生成`使用Hexo一步一步搭建github博客.md`文件。        
 打开这个md文件，可以看到下面的内容      
 ```
 ---
