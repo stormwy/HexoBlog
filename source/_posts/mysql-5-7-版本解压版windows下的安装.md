@@ -1,8 +1,8 @@
 ---
 title: mysql 5.7 版本解压版windows下的安装
 date: 2016-08-01 16:08:32
-tags: mysql		
-categories: 数据库		
+categories: 数据库
+tags: mysql				
 ---
 mysql 5.7解压版windows安装有点琐碎，在此记录一下。
 

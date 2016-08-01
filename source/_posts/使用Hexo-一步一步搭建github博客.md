@@ -2,7 +2,7 @@
 title: 使用Hexo一步一步搭建github博客
 date: 2016-07-28 14:03:39
 categories: Nodejs
-tags: Hexo 
+tags: hexo 
 ---
 Hexo是基于Nodejs的一个快速简洁高效的博客框架，这篇文章将要介绍如何使用Hexo博客框架、Github Pages免费静态站点托管服务来建立个人在github上的博客站点。本文版本是Hexo 3.2.2。       
 ## 一、安装相关软件
