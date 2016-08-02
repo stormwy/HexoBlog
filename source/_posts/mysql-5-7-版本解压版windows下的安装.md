@@ -5,7 +5,7 @@ categories: 数据库
 tags: mysql				
 ---
 mysql 5.7解压版windows安装有点琐碎，在此记录一下。
-
+## 安装过程
 ### 1.解压、配置path     
 解压到想要安装的目录：`D:\develop\mysql-5.7.13-winx64`      
 将位置`D:\develop\mysql-5.7.13-winx64\bin`配置到环境变量path中。
@@ -42,7 +42,15 @@ mysql -u root --skip-password
 ```
  ALTER USER 'root'@'localhost' IDENTIFIED BY 'new_password';
 ```
-
+## 可能遇到的问题
+### 1.运行“net start mysql”时提示：发生系统错误 2		
+这个问题一般是在data目录初始化之前，先进行了mysql服务安装引起的。		
+解决方式是，到`bin`目录运行:		
+```
+mysqld --remove //移除服务
+mysqld --install //重新安装服务
+```
+然后重新运行就行。
 
 ### 参考资料
 官方安装文档:[Installing MySQL on Microsoft Windows Using a noinstall Zip Archive](http://dev.mysql.com/doc/refman/5.7/en/windows-install-archive.html)     
