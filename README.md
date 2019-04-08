@@ -1,3 +1,8 @@
+# Abandoned
+Now use `Hugo` instead of `Hexo`.
+
+----
+
 # HexoBlog
 My blog support by hexo
 ## About running this blog   
